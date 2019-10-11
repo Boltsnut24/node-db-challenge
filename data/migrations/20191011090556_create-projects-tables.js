@@ -4,7 +4,7 @@ exports.up = function(knex) {
     tbl.increments();
     tbl.string('name', 255)
       .notNullable();
-    tbl.string('desc', 1000);
+    tbl.string('description', 1000);
     tbl.bool('complete');
   })
   .createTable('resources', tbl => {
